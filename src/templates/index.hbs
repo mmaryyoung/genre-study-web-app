@@ -1,0 +1,23 @@
+<html>
+    {{ > styles }}
+    <head>
+        <title>BB ai ni</title>
+    </head>
+    <body>
+        {{ > navbar }}
+        <div class="main">
+            <div class="questions">
+                What is the genre of this audio?
+            </div>
+            <div class="audio">some audio stuff</div>
+            <div class="genre-options">
+                <select>
+                    {{#each genres}}
+                        <option value="{{this}}">{{this}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+
+    </body>
+</html>
