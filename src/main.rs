@@ -81,6 +81,8 @@ fn handlebars() -> Handlebars<'static> {
         .unwrap();
     reg.register_template_file("navbar", "./src/templates/navbar.hbs")
         .unwrap();
+    reg.register_template_file("examples", "./src/templates/examples.hbs")
+        .unwrap();
 
     reg
 }
